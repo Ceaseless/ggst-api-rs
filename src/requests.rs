@@ -22,7 +22,7 @@ impl Default for Context {
 }
 
 impl Context {
-    /// Overwrite the url used for api requests. The default is https://ggst-game.guiltygear.com
+    /// Overwrite the url used for api requests. The default is <https://ggst-game.guiltygear.com>
     /// You can modify this to a proxy in your area for faster requests
     pub fn new(base_url: String) -> Self {
         Context { base_url }

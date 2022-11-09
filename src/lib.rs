@@ -170,7 +170,7 @@ impl Character {
     /// 00: Sol 01: Ky 02: May 03: Axl 04: Chipp 05: Pot 06: Faust 07: Millia
     /// 08: Zato-1 09: Ram 0a: Leo 0b: Nago 0c: Gio 0d: Anji 0e: I-No 0f: Goldlewis 10: Jack-O
     ///
-    /// See https://github.com/optix2000/totsugeki/issues/35#issuecomment-922516535
+    /// See <https://github.com/optix2000/totsugeki/issues/35#issuecomment-922516535>
     pub fn from_u8(c: u8) -> Result<Self> {
         match c {
             0x00 => Ok(Character::Sol),
@@ -205,7 +205,7 @@ impl Character {
     /// 00: Sol 01: Ky 02: May 03: Axl 04: Chipp 05: Pot 06: Faust 07: Millia
     /// 08: Zato-1 09: Ram 0a: Leo 0b: Nago 0c: Gio 0d: Anji 0e: I-No 0f: Goldlewis 10: Jack-O
     ///
-    /// See https://github.com/optix2000/totsugeki/issues/35#issuecomment-922516535
+    /// See <https://github.com/optix2000/totsugeki/issues/35#issuecomment-922516535>
     pub fn to_u8(&self) -> u8 {
         match self {
             Character::Sol => 0x00,
@@ -257,7 +257,7 @@ pub enum Floor {
 impl Floor {
     /// Create a floor from a byte representation
     ///
-    /// See https://github.com/optix2000/totsugeki/issues/35#issuecomment-922516535 for mapping
+    /// See <https://github.com/optix2000/totsugeki/issues/35#issuecomment-922516535> for mapping
     pub fn from_u8(c: u8) -> Result<Self> {
         match c {
             0x01 => Ok(Floor::F1),
